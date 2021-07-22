@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеосервис</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="page__wrapper">
+    <!-- Header -->
+    <header class="header">
+        <div class="wrapper">
+           <div class="header__wrapper">
+                <a href="#" class="header__logo"><img src="./img/logo.svg" alt="Видеосервис"></a>
+            <div class="header__search">
+                <input type="text" placeholder= "Поиск..." class="header__input">
+                <button type="submit" class="header__btn">Найти</button>
+            </div>           
+            <div class="header__user">
+                <div class="user-name" id="user-name">Константин К.</div>
+                <input type="text" class="name-input">
+                <button type="submit" class="header__btn">Выйти</button>
+            </div>
+          
+           </div>
+        </div>
+    </header>
+
+   
+    <!-- Main -->
+    <main>
+        <!-- Tabs -->
+        <section class="tabs">
+            <div class="wrapper">
+                    <div class="tabs__header">   
+                        <div class="tabs__header-item active" data-tab="#tab_1">Фильмы</div>
+                        <div class="tabs__header-item" data-tab="#tab_2">Телеканалы</div>      
+                     </div> 
+                     <div class="tabs__indicator"></div>
+                <div class="tabs__content">
+                        <!-- Tab 1 -->
+                        <div class="tabs__item active" id="tab_1">
+                            <!-- New -->
+                            <div class="tabs__new">
+                                <h2 class="tabs__title">&#128293; Новинки</h2>
+                                <div class="new__content">
+                                    <div class="new__item">
+                                        <div class="new__img"> 
+                                            <a href="#"><img src="./img/cat.jpg" alt="Мульт в кино. Выпуск №103. Некогда грустить!"></a>
+                                            <div class="new__description"></div>
+                                        </div>  
+                                        <p class="new__title"><a href="#">Мульт в кино. Выпуск №103. <br> Некогда грустить!</a></p> 
+                                    </div>
+
+                                    <div class="new__item">
+                                        <div class="new__img"> 
+                                            <a href="#"><img src="./img/batman.jpg" alt="Новый Бэтмен"></a>
+                                            <div class="new__description"></div>
+                                        </div> 
+                                        <p class="new__title"><a href="#">Новый Бэтмен</a></p>  
+                                    </div>
+
+                                    <div class="new__item">
+                                        <div class="new__img"> 
+                                            <a href="#"><img src="./img/hollywood.jpg" alt="Однажды... в Голливуде"></a>
+                                            <div class="new__description">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</div>
+                                        </div>  
+                                        <p class="new__title"><a href="#">Однажды... в Голливуде</a></p> 
+                                    </div>
+
+                                    <div class="new__item">
+                                        <div class="new__img"> 
+                                            <a href="#"><img src="./img/strippers.jpg" alt="Стриптизёрши"></a>
+                                            <div class="new__description"></div>
+                                        </div> 
+                                        <p class="new__title"><a href="#">Стриптизёрши</a></p>   
+                                    </div> 
+                                </div>
+                            </div>
+                        
+                        <!-- Genres -->
+                        <div class="tabs__genre">
+                            <h2 class="tabs__title">Жанры</h2>
+                            <div class="new__content">
+                                <div class="genre__item">
+                                    <div class="genre__comedy">
+                                        <div class="genre__emoji">&#128513;</div>
+                                        <div class="genre__title">Комедии</div>
+                                    </div>
+                                </div>
+
+                                <div class="genre__item">
+                                    <div class="genre__drama">
+                                        <div class="genre__emoji">&#128557;</div>
+                                        <div class="genre__title">Драмы</div>
+                                    </div>
+                                </div>
+
+                                <div class="genre__item">
+                                    <div class="genre__fantasy">
+                                        <div class="genre__emoji">&#128125;</div>
+                                        <div class="genre__title">Фантастика</div>
+                                    </div>
+                                </div>
+
+                                <div class="genre__item">
+                                    <div class="genre__horror">
+                                        <div class="genre__emoji">&#128123;</div>
+                                        <div class="genre__title">Ужасы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Tab 2 -->
+                        <div class="tabs__item" id="tab_2">
+                            <div class="tabs__channels">
+                                <div class="channels__item">
+                                        <div class="channels__logo"><img src="./img/first-channel.svg" alt="Первый канал"></div>
+                                       
+                                        <div class="channel__schedule">
+                                            <div class="channel__title">Первый канал</div>
+                                            <div class="channel__schedule-first">
+                                                <span class="channel__schedule-time">13:00</span>
+                                                <span class="tv">Новости (с субтитрами)</span>
+                                            </div>
+
+                                            <div class="channel__schedule-second">
+                                                <span class="channel__schedule-time">14:00</span>
+                                                <span class="tv">Давай поженимся</span>
+                                            </div>
+
+                                            <div class="channel__schedule-third">
+                                                <span class="channel__schedule-time">15:00</span>
+                                                <span class="tv">Другие новости</span>
+                                            </div>
+                                        </div>
+
+                                </div>
+
+                                <div class="channels__item">
+                                    <div class="channels__logo"><img src="./img/2x2-channel.svg" alt="2x2"></div>
+                                    
+                                    <div class="channel__schedule">
+                                        <div class="channel__title">2x2</div>
+                                        <div class="channel__schedule-first">
+                                            <span class="channel__schedule-time">13:00</span>
+                                            <span class="tv">МУЛЬТ ТВ. Сезон 4, 7 серия</span>
+                                        </div>
+
+                                        <div class="channel__schedule-second">
+                                            <span class="channel__schedule-time">14:00</span>
+                                            <span class="tv">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span>
+                                        </div>
+
+                                        <div class="channel__schedule-third">
+                                            <span class="channel__schedule-time">15:00</span>
+                                            <span class="tv">БУРДАШЕВ. Сезон 1, 20 серия</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="channels__item">
+                                    <div class="channels__logo"><img src="./img/rbk-channel.svg" alt="РБК"></div>
+                                    <div class="channel__schedule">
+                                        <div class="channel__title">РБК</div>
+                                        <div class="channel__schedule-first">
+                                            <span class="channel__schedule-time">13:00</span>
+                                            <span class="tv">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span>
+                                        </div>
+
+                                        <div class="channel__schedule-second">
+                                            <span class="channel__schedule-time">14:00</span>
+                                            <span class="tv">ДЕНЬ. Главные темы</span>
+                                        </div>
+
+                                        <div class="channel__schedule-third">
+                                            <span class="channel__schedule-time">15:00</span>
+                                            <span class="tv">Главные новости</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="channels__item">
+                                    <div class="channels__logo"><img src="./img/amedia-channel.svg" alt="AMEDIA PREMIUM"></div>
+                                    <div class="channel__schedule">
+                                        <div class="channel__title">AMEDIA PREMIUM</div>
+                                        <div class="channel__schedule-first">
+                                            <span class="channel__schedule-time">13:00</span>
+                                            <span class="tv">Клиент всегда мёртв</span>
+                                        </div>
+
+                                        <div class="channel__schedule-second">
+                                            <span class="channel__schedule-time">14:00</span>
+                                            <span class="tv">Голодные игры: Сойка-пересмешница. Часть I</span>
+                                        </div>
+
+                                        <div class="channel__schedule-third">
+                                            <span class="channel__schedule-time">15:00</span>
+                                            <span class="tv">Секс в большом городе</span>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrapper">
+                <div class="company__img">
+                <img src="./img/htc-cs-logo.svg" alt="">
+            </div>
+            <div class="company__info"> 
+                <div class="company__info-adress">
+                    426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)
+                </div>
+                <div class="company__info-number">+7 (3412) 93-88-61, 43-29-29</div>
+                <div class="company__info-site"><a href="https://htc-cs.ru/">htc-cs.ru</a></div>
+            </div>
+               
+            </div>
+    
+            </div>
+        </div>
+    </footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

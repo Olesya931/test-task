@@ -1,0 +1,130 @@
+// responsive 
+
+@media (max-width: $screen-xl) {
+	.wrapper {
+		width: 960px;
+	}
+    .new__item, .genre__item{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .header__search{
+        width: 300px;
+        // margin-right: 100px;
+    }
+
+    .header__input{
+        width: 200px;
+    }
+
+    .header__logo{
+        width: 150px;
+        // margin-right: 100px;
+    }
+
+    .new__img{
+        width: 230px;
+        height: 320px;
+    }
+
+    .new__title a{
+        font-size: 16px;
+    }
+
+    .genre__comedy, .genre__drama, .genre__fantasy, .genre__horror{
+        width: 230px;
+    }
+}
+
+@media (max-width: $screen-lg) {
+	.wrapper {
+		width: 720px;
+	}
+
+    .header__search{
+        // margin-right: 50px;
+    }
+
+    .header__logo{
+
+        // margin-right: 50px;
+    }
+
+    .channels__item{
+        height: auto;
+        padding: 20px;
+    }
+
+    .channels__logo{
+        margin: 0 80px;
+    }
+
+    .new__item, .genre__item{
+        flex-basis: 40%;
+    }
+
+    .tabs__header, .tabs__title, .new__title a, .genre__title{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: $screen-md) {
+	.wrapper {
+		width: 540px;
+    }
+
+}
+
+@media (max-width: $screen-sm) {
+	.wrapper {
+		width: 100%;
+		padding: 0 15px;
+	}
+
+    .tabs__header, .tabs__title, .new__title a, .genre__title{
+        font-size: 16px;
+    }
+
+    .tabs__title{
+        text-align: center;
+    }
+
+    .channels__item{
+        flex-direction: column;
+    }
+
+    .channel__schedule{
+        font-size: 12px;
+    }
+
+    .header__wrapper{
+        justify-content: stretch;
+        font-size: 12px;
+        button, input {
+            font-size: 12px;
+        }
+    }
+
+    .header__logo{
+        width: 100px;
+        margin-right: 30px;
+    }
+
+    .header__search{
+        width: 200px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+
+    .header__input{
+        width: 120px;
+        margin-right: 16px;
+    }
+
+    .footer{
+        font-size: 12px;
+    }
+
+}

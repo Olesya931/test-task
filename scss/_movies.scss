@@ -1,0 +1,105 @@
+// new
+
+.new__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.new__item:hover .new__description{
+    transform: translateY(0);
+    opacity: 1;
+    cursor: pointer;
+} 
+
+.new__img{
+        width: 280px;
+        height: 370px;  
+        position: relative;
+        display: flex;
+        img{
+            vertical-align:bottom;
+            position: absolute;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
+}
+
+.new__title{
+    margin-top: 16px;
+    a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: $grey;
+    }
+}
+
+.new__description{
+    position: absolute;
+    padding: 16px;
+    background-color: rgba(51, 51, 51, 0.8);
+    opacity: 0;
+    color: $darkwhite;
+    line-height: 140%;
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease;
+    border-radius: 8px;
+}
+
+// genres
+
+.genre__comedy, .genre__drama, .genre__fantasy, .genre__horror{
+    opacity: 0.8;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    width: 280px;
+    height: 208px;
+    position: relative; 
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.genre__emoji{
+    position: absolute;
+    font-size: 48px;
+    line-height: 57px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.genre__title{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    top: 160px;
+    left: 50%; 
+    transform: translate(-50%, 0); 
+}
+
+.genre__comedy{
+    background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+
+.genre__drama{
+    background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.genre__fantasy{
+    background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.genre__horror{
+    background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}

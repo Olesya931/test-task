@@ -1,0 +1,44 @@
+// channels
+
+.channels__item{
+    display: flex;
+    align-items: center;
+    background: $darkwhite;
+    border-radius: 8px;
+    height:162px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.channels__logo{
+    margin: 0 143px;
+    width: 114px;
+    height: 65px;
+}
+
+.channel__schedule{
+    height: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    color: $grey;
+    &-first{
+        color: $red ;
+    }
+
+    &-first, &-second{
+        margin-bottom: 12px;
+    }
+
+    &-time{
+        margin-right: 16px;
+    }
+}
+
+.channel__title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $grey;
+    padding-top: 21px;
+    margin-bottom: 17px;
+}

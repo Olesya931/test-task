@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+input, button{
+    font-family:inherit;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+button:focus{
+    outline: none;
+}
+
+.page__wrapper{
+    min-height: calc(100vh - 120px);
+    margin-bottom: 72px;
+}
+
+.wrapper{
+    max-width: 1180px;
+    margin:0 auto;  
+}
+
+
+// scrollbar 
+
+body, .tabs__channels {
+    scrollbar-width: thin;
+    scrollbar-color: #BDBDBD $darkwhite;
+  }
+
+// для Chrome/Edge/Safari 
+  body::-webkit-scrollbar,.tabs__channels::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-track,.tabs__channels::-webkit-scrollbar-track {
+    background: $darkwhite;
+    border-radius: 4px;
+  }
+  body::-webkit-scrollbar-thumb,.tabs__channels::-webkit-scrollbar-thumb {
+    background-color: #BDBDBD;
+    border-radius: 4px;
+    border: 2px solid $darkwhite; 
+  }

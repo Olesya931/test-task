@@ -1,0 +1,63 @@
+// tabs
+
+.tabs{
+    margin-top: 48px;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 33px; 
+        &-item{
+            color:$grey;
+            cursor: pointer;
+            &:first-child{
+                margin-right: 24px;
+            }
+        }
+        .active{
+            position: relative;
+            color: $red;
+        }
+    }
+
+    &__item{
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
+
+    &__new{
+        margin-top: 41px;
+    }
+
+    &__genre{
+        margin-top: 32px;
+    }
+
+    &__channels{
+        width: 100%;
+        height: 696px;
+        margin-top: 36px;
+        overflow:auto;
+        padding-right: 8px;
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__indicator{
+        height: 2px;
+        background: $red;
+        position: absolute;
+        transition: 0.5s;
+        margin-top: 9px;
+    } 
+}

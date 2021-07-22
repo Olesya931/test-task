@@ -1,0 +1,537 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+input, button {
+  font-family: inherit;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.page__wrapper {
+  min-height: calc(100vh - 120px);
+  margin-bottom: 72px;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+body, .tabs__channels {
+  scrollbar-width: thin;
+  scrollbar-color: #BDBDBD #F2F2F2;
+}
+
+body::-webkit-scrollbar, .tabs__channels::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track, .tabs__channels::-webkit-scrollbar-track {
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb, .tabs__channels::-webkit-scrollbar-thumb {
+  background-color: #BDBDBD;
+  border-radius: 4px;
+  border: 2px solid #F2F2F2;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 32px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__logo {
+  width: 182px;
+  height: 36px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 402px;
+  margin-top: 11px;
+}
+
+.header__input {
+  border: none;
+  border-bottom: 1px solid #333333;
+  background-color: transparent;
+  outline: none;
+  width: 320px;
+  height: 25px;
+}
+
+.header__input::-webkit-input-placeholder {
+  color: #828282;
+  font-weight: 400;
+}
+
+.header__input ::-moz-placeholder {
+  color: #828282;
+  font-weight: 400;
+}
+
+.header__input:-ms-input-placeholder {
+  color: #828282;
+  font-weight: 400;
+}
+
+.header__input:-moz-placeholder {
+  color: #828282;
+  font-weight: 400;
+}
+
+.header__btn {
+  background: transparent;
+  border: none;
+  color: #E5261E;
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  color: #CC221B;
+}
+
+.header__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-name {
+  font-weight: 500;
+  line-height: 19px;
+  color: #333333;
+  margin-right: 16px;
+  cursor: pointer;
+  max-width: 114px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name-input {
+  display: none;
+  border: none;
+  border-bottom: 1px solid #333333;
+  background-color: transparent;
+  outline: none;
+  margin-right: 16px;
+  width: 100px;
+  height: 25px;
+}
+
+.tabs {
+  margin-top: 48px;
+}
+
+.tabs__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.tabs__header-item {
+  color: #333333;
+  cursor: pointer;
+}
+
+.tabs__header-item:first-child {
+  margin-right: 24px;
+}
+
+.tabs__header .active {
+  position: relative;
+  color: #E5261E;
+}
+
+.tabs__item {
+  display: none;
+}
+
+.tabs .active {
+  display: block;
+}
+
+.tabs__new {
+  margin-top: 41px;
+}
+
+.tabs__genre {
+  margin-top: 32px;
+}
+
+.tabs__channels {
+  width: 100%;
+  height: 696px;
+  margin-top: 36px;
+  overflow: auto;
+  padding-right: 8px;
+}
+
+.tabs__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.tabs__indicator {
+  height: 2px;
+  background: #E5261E;
+  position: absolute;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 9px;
+}
+
+.new__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 16px;
+}
+
+.new__item:hover .new__description {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.new__img {
+  width: 280px;
+  height: 370px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new__img img {
+  vertical-align: bottom;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.new__title {
+  margin-top: 16px;
+}
+
+.new__title a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.new__description {
+  position: absolute;
+  padding: 16px;
+  background-color: rgba(51, 51, 51, 0.8);
+  opacity: 0;
+  color: #F2F2F2;
+  line-height: 140%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border-radius: 8px;
+}
+
+.genre__comedy, .genre__drama, .genre__fantasy, .genre__horror {
+  opacity: 0.8;
+  -webkit-box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  width: 280px;
+  height: 208px;
+  position: relative;
+}
+
+.genre__comedy:hover, .genre__drama:hover, .genre__fantasy:hover, .genre__horror:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.genre__emoji {
+  position: absolute;
+  font-size: 48px;
+  line-height: 57px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.genre__title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  text-align: center;
+  top: 160px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.genre__comedy {
+  background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);
+}
+
+.genre__drama {
+  background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);
+}
+
+.genre__fantasy {
+  background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);
+}
+
+.genre__horror {
+  background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);
+}
+
+.channels__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F2F2F2;
+  border-radius: 8px;
+  height: 162px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.channels__logo {
+  margin: 0 143px;
+  width: 114px;
+  height: 65px;
+}
+
+.channel__schedule {
+  height: 100%;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+}
+
+.channel__schedule-first {
+  color: #E5261E;
+}
+
+.channel__schedule-first, .channel__schedule-second {
+  margin-bottom: 12px;
+}
+
+.channel__schedule-time {
+  margin-right: 16px;
+}
+
+.channel__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  padding-top: 21px;
+  margin-bottom: 17px;
+}
+
+.footer {
+  background: #F2F2F2;
+  width: 100%;
+  height: 120px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company__img {
+  width: 32px;
+  height: 64px;
+  padding: 28px 0;
+}
+
+.company__info {
+  margin-top: 22px;
+  margin-left: 40px;
+}
+
+.company__info-adress {
+  margin-bottom: 6px;
+}
+
+.company__info-number {
+  margin-bottom: 10px;
+}
+
+.company__info-site a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #1F4766;
+}
+
+@media (max-width: 1199px) {
+  .wrapper {
+    width: 960px;
+  }
+  .new__item, .genre__item {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .header__search {
+    width: 300px;
+  }
+  .header__input {
+    width: 200px;
+  }
+  .header__logo {
+    width: 150px;
+  }
+  .new__img {
+    width: 230px;
+    height: 320px;
+  }
+  .new__title a {
+    font-size: 16px;
+  }
+  .genre__comedy, .genre__drama, .genre__fantasy, .genre__horror {
+    width: 230px;
+  }
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    width: 720px;
+  }
+  .channels__item {
+    height: auto;
+    padding: 20px;
+  }
+  .channels__logo {
+    margin: 0 80px;
+  }
+  .new__item, .genre__item {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .tabs__header, .tabs__title, .new__title a, .genre__title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .tabs__header, .tabs__title, .new__title a, .genre__title {
+    font-size: 16px;
+  }
+  .tabs__title {
+    text-align: center;
+  }
+  .channels__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .channel__schedule {
+    font-size: 12px;
+  }
+  .header__wrapper {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    font-size: 12px;
+  }
+  .header__wrapper button, .header__wrapper input {
+    font-size: 12px;
+  }
+  .header__logo {
+    width: 100px;
+    margin-right: 30px;
+  }
+  .header__search {
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  .header__input {
+    width: 120px;
+    margin-right: 16px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
